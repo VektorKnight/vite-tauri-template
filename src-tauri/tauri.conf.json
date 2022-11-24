@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "",
-    "beforeDevCommand": "",
+    "beforeBuildCommand": "set VITE_NETWORK_PROCESSOR=tauri && vite build",
+    "beforeDevCommand": "set VITE_NETWORK_PROCESSOR=tauri && vite",
     "devPath": "http://localhost:8080",
     "distDir": "../dist"
   },
